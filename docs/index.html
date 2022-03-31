@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <!--boo-->
     <meta charset="UTF-8">
@@ -259,7 +259,7 @@ margin-right: auto;">
 <section>
   <section class="container_1">
     <h3>Ciclador de Baterias</h3>
-    <textarea>
+    <textarea id="Ciclador_copy">
 	    /*REMOVER BIBLIOTECA - DISPLAY I2C NO FINAL*/
 
 //sdcard
@@ -676,19 +676,31 @@ void loop() {
   delay(1000);
 }
 	  
-    </textarea>
+  </textarea>
   
   </section>
   <br>
   <div class="text-center">
-  <button id="button_1" type="button">Copy Code</button>
-  <button id="button_2" type="button">Download</button>
+    <button id="button" type="button"  value="Copy">Copy Code</button>
+    <button id="button_2" type="button" onclick="location.href='https://github.com/GabpsX/pHmetro/archive/refs/heads/main.zip'" type="button">
+      Download</button>
+    <script type="text/javascript">
+        var button1 = document.getElementById("button"),
+            input1 = document.getElementById("Ciclador_copy");
+
+        button1.addEventListener("click", function(event1) {
+            event1.preventDefault();
+            input1.select();
+            document.execCommand("copy");
+        });
+    </script>
   </div>
+
   <br>
   <hr>
   <section class="container_2">
     <h3>pHmetro</h3>
-    <textarea id="ciclador_text_code">//GABRIEL P.S
+    <textarea id="ph_copy">//GABRIEL P.S
       //V: 5.1 >> pHmetro
       #include <Nextion.h>
       #include <EEPROM.h>
@@ -1482,7 +1494,7 @@ void loop() {
       Download</button>
     <script type="text/javascript">
         var button = document.getElementById("button_3"),
-            input = document.getElementById("ciclador_text_code");
+            input = document.getElementById("ph_copy");
 
         button.addEventListener("click", function(event) {
             event.preventDefault();
