@@ -176,7 +176,7 @@ textarea:hover{
   height: 40px;
   margin: 0 15px;
 }
-#button_1,
+#button,
 #button_2,
 #button_3,
 #button_4{
@@ -184,7 +184,7 @@ textarea:hover{
   border:none;
   font-weight: 500;
 }
-#button_1:hover{
+#button:hover{
   color: #fffdfd;
   background-color: rgb(3, 133, 255);
   border:none;
