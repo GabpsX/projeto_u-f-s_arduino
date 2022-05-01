@@ -28,7 +28,21 @@ hr{
   padding: 1cm;
   box-shadow: 2px 5px 5px rgb(235, 235, 235);
 }
+
 @media(min-width:700px) {
+  .remove-desktop{
+    display:none;
+    position: relative;
+  }
+  header ul li a{
+    position: relative;
+    top: 8px;
+    left: -120px;
+  }
+  header img {
+    position: relative;
+    left: 110px;
+  }
 .disable{
   display: none;
   
@@ -53,7 +67,21 @@ hr{
   }
 }
 @media(max-width:700px) {
+  header ul li a,img{
+    position: relative;
+    top: 8px;
+  }
+  .menu_img{
+      display: none
+  }
+  #menu img{
+    position: relative;
+    left: none;
+    top: 4px;
 
+    background-color: none;
+  
+  }
   .carousel-inner  {
     width: 100%;
     height: 11em;
@@ -83,9 +111,8 @@ hr{
       margin-left: auto;
       margin-right: auto;
       border-radius: 5px;
-      width: 95%;
-      margin-left: auto;
-      margin-right: auto;
+
+
 
 }
   /* width */
@@ -171,6 +198,18 @@ textarea{
 textarea:hover{
   border-color: #02f7ff;
 }
+
+.text-white_1,.p-3 {
+  color: #393d41;
+  font-size: 16px;
+  font-weight: 500;
+}
+.text-center a:hover{
+  color: #0a85ff;
+  font-size: 20px;
+  font-weight: 200;
+  border-radius: 2px;
+}
 .text-center button{
   width: 150px;
   height: 40px;
@@ -178,7 +217,18 @@ textarea:hover{
 }
 
 
+#back-to-top{
+  background-color: #646464;
+  border: #000000;
+}
+#back-to-top:hover{
+  font-weight: 500;
+  color: #f1f1f1;
+  background-color: rgb(3, 133, 255);
+  border:none;
+  border-radius: 8px;
 
+}
 #button,
 #button_2,
 #button_3,
@@ -187,6 +237,7 @@ textarea:hover{
   border:none;
   font-weight: 500;
 }
+
 #button:hover{
   color: #fffdfd;
   background-color: rgb(3, 133, 255);
@@ -246,3 +297,20 @@ textarea:hover{
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+#menu img{
+  position: relative;
+  left: -80px;
+  top: 4px;
+  width: 50%;
+  height: 80%;
+  background-color: none;
+
+}
+#menu img:hover{
+  width: 60%;
+  height: 90%;
+  background-color: none;
+
+}
+
