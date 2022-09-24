@@ -259,40 +259,41 @@ margin-right: auto;">
   <hr>
 </div>
 
-<div class="container-1">
+<div class="container_1">
   <div class="content-img">
     <h3>Triangle Wave</h3>
-    <img class="ciclador-img" src="img/Corrente.png" alt="">
+    <img class="triangle-img" src="img/Corrente.png" alt="">
     <textarea id="wave">
  
     </textarea>
-<script type="text/javascript">
-  var button1 = document.getElementById("button"),
-      input1 = document.getElementById("Ciclador_copy");
-
-  button1.addEventListener("click", function(event1) {
-      event1.preventDefault();
-      input1.select();
-      document.execCommand("copy");
-  });
-</script>
-  </div>
+    <div class="text-center">
+      <button id="button_6" type="button">Copy Code</button>
+      <button id="button_4" type="button" onclick="location.href='https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/pHmetro.7z'" type="button">
+        Download</button>
+      <script type="text/javascript">
+          var button_4 = document.getElementById("button_6"),
+              input_4 = document.getElementById("wave");
   
-</div>
-<style>
-  .container-1{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .content-img{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .ciclador-img{
-    width: 100%;
-  }
-</style>
+          button_4.addEventListener("click", function(event) {
+              event.preventDefault();
+              input_4.select();
+              document.execCommand("copy");
+          });
+      </script>
+    </div>
+
+  </div>
+  <style>
+    .content-img{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .triangle-img{
+      width: 80%;
+      margin-bottom: 4%;
+      border-radius: 8px;
+    }
+  </style>
 
 
 <hr>

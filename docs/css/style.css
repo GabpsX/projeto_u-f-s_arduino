@@ -232,7 +232,8 @@ textarea:hover{
 #button,
 #button_2,
 #button_3,
-#button_4{
+#button_4,
+#button_6{
   border-radius: 8px;
   border:none;
   font-weight: 500;
@@ -263,7 +264,12 @@ textarea:hover{
   border:none;
   border-radius: 8px;
 }
-
+#button_6:hover{
+  color: #fffdfd;
+  background-color: rgb(3, 133, 255);
+  border:none;
+  border-radius: 8px;
+}
 .button_container  {
   display: flex;
   justify-content: space-between;
