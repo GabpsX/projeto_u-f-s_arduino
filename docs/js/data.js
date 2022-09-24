@@ -15,6 +15,13 @@ fetch('ciclador.txt')
 })
 
 
+fetch('wave.txt')
+  .then(response => response.text())
+  .then(text => {
+    const wave = text.split();
+    document.getElementById('wave').value = wave;
+})
+
 
 
 

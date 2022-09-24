@@ -263,6 +263,19 @@ margin-right: auto;">
   <div class="content-img">
     <h3>Triangle Wave</h3>
     <img class="ciclador-img" src="img/Corrente.png" alt="">
+    <textarea id="wave">
+ 
+    </textarea>
+<script type="text/javascript">
+  var button1 = document.getElementById("button"),
+      input1 = document.getElementById("Ciclador_copy");
+
+  button1.addEventListener("click", function(event1) {
+      event1.preventDefault();
+      input1.select();
+      document.execCommand("copy");
+  });
+</script>
   </div>
   
 </div>
