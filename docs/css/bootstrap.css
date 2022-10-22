@@ -7381,8 +7381,25 @@ textarea.form-control-lg {
 .text-reset {
   color: inherit !important;
 }
+@keyframes header {
+  0% {
+    opacity: 0.9;
+    background: linear-gradient(320deg, #333, #333, rgb(5, 155, 255));
 
+  }
+  
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .9;
+    background: linear-gradient(320deg, #333, #333, rgb(5, 155, 255));
+
+  }
+}
 .bg-primary {
+  animation: header 1s ease-in-out infinite;
   background-color: #0d6efd !important;
   width: 98%;
   margin-left: auto;
