@@ -8,6 +8,7 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/jquery-3.6.1.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet">
     <title>GabpsX</title>
 </head>
@@ -73,20 +74,23 @@ a:hover {
 }
 
 #header {
-  box-sizing: border-box;
+ /* box-sizing: border-box;
   height: 60px;
   padding: 1rem;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  */
   background: #000000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* 
   margin-bottom: 0.08cm;
   width: 99%;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
   align-items: center;
+  */
 }
 
 #menu {
@@ -374,7 +378,9 @@ margin-right: auto;">
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/script_menu.js"></script>
+<!-- 
 <script src="js/add_code.js"></script>
+-->
 <script>
     function myFunction() {
       var x = document.getElementById("myLinks");
@@ -385,5 +391,11 @@ margin-right: auto;">
       }
     }
 </script>
+<!--
 <script src="js/data.js"></script>
+ --> 
+
+<script>
+  $('#header').css({'display':'flex', 'justify-content':'space-between', 'align-items': 'center'})
+</script>
 </html>
