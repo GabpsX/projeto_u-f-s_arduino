@@ -23,19 +23,23 @@
 section{
     -webkit-font-smoothing: antialiased;
 }
+#top-header{
+  color: #000000;
+  background: linear-gradient(320deg, #333, #333, rgb(5, 155, 255));
 
+}
 
-header a img{
+#top-header a img{
+
     width: 16%;
 	  height: 16%;
-    margin-top: 2px;
-    margin-bottom: 2px;
+
     margin-right: 5px;
     border-radius: 0.4cm;
     
 
 }
-header:hover a img {
+#top-header:hover a img {
 	-moz-transform: scale(0.9);
 	-webkit-transform: scale(0.9);
 	transform: scale(1.2);
@@ -185,7 +189,7 @@ a:hover {
 </style>
 <body>
  
-<header id="header">
+<header id="top-header">
       <a  href="index.html"><img src="https://raw.githubusercontent.com/GabpsX/GabpsX/a488afe575e5a193d5a22f85ef60cba16d7d1251/docs/icons8-github.gif" alt="Logo"></a>
       <nav id="nav">
          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
@@ -193,7 +197,7 @@ a:hover {
          </button>
          <ul id="menu" role="menu">
             <a href="index.html"><img class="menu_img" src="img/icons8-arduino-64.png" /></a>
-            <li class="remove-desktop"><a href="/">Arduino</a></li>
+
             <li><a href="https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/Nextion.7z">Nextion HMI</a></li>
             <li><a href="https://gabpsx.github.io/login-site-gabpsx/">Login</a></li>
             <li><a href="https://gabpsx.github.io/maintenance-page/">Sobre</a></li>
@@ -403,6 +407,6 @@ margin-right: auto;">
  
 
 <script>
-  $('#header').css({'display':'flex', 'justify-content':'space-between', 'align-items': 'center'})
+  $('#top-header').css({'display':'flex', 'justify-content':'space-between', 'align-items': 'center', 'margin-bottom': '2%'})
 </script>
 </html>
