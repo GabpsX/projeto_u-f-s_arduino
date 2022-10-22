@@ -1,417 +1,365 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <!--boo-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="jquery/jquery-3.6.1.min.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <title>GabpsX</title>
-</head>
-
-<style>
-
-#back-to-top:hover{
-  opacity: 0.8;
-  background-color: rgb(5, 155, 255);
-}
-
-section{
-    -webkit-font-smoothing: antialiased;
-}
-#top-header{
-  height: 80px;
-  color: #000000;
-  background: linear-gradient(320deg, #333, #333, rgb(5, 155, 255));
-
-}
-
-a img{
-
-    top: 4px;
-
-    background-color: black;
-
-    width: 50px;
-	  height: 16%;
-
-    margin-right: 5px;
-    border-radius: 0.4cm;
-    
-
-}
-#top-header:hover a img {
-	-moz-transform: scale(0.9);
-	-webkit-transform: scale(0.9);
-	transform: scale(1.2);
-	max-width: 100%;
-	-moz-transition: all 0.9s;
-	-webkit-transition: all 0.9s;
-	transition: all 0.9s;
-  background-color: black;
-}
-
-header ul li a:hover {
-	-moz-transform: scale(0.9);
-	-webkit-transform: scale(0.9);
-	transform: scale(1.2);
-	max-width: 100%;
-	-moz-transition: all 0.9s;
-	-webkit-transition: all 0.9s;
-	transition: all 0.9s;
-}
-
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  margin-top: 10px;
-}
-
-a:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-#header {
-  
- /* box-sizing: border-box;
-  height: 60px;
-  padding: 1rem;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
-  */
-  background: #000000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   /* 
-  margin-bottom: 0.08cm;
-  width: 99%;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  align-items: center;
-  */
-}
-
-#menu {
-  display: flex;
-  list-style: none;
-  gap: 1.0rem;
-}
-
-#menu a {
-  display: block;
-  padding: 0.5rem;
-}
-
-#btn-mobile {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  
-  #header{
-    height: 75px;
-  }
-  #header a img {
-    margin-top: -20px;
-  }
-  #menu {
-
-    position: fixed;
-    display: inline-block;
-    vertical-align: middle;
-    width: 30vh;
-    top: 80px;
-    right: 10%;
-    background: #ececec;
-    transition: 0.8s;
-    z-index: 1000;
-    height: 50px;
-    visibility: hidden;
-    overflow-y: hidden;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    color:rgb(27, 27, 226);
-  }
-  #nav.active #menu {
-    height: 200px;
-    background-color: #1f1f1f;
-    border-radius: 15px;
-    visibility: visible;
-    overflow-y: auto;
-
-  }
-  #menu a {
-    padding: 0rem -10rem;
-    margin: 0.5rem;
-    border-radius: 10px;
-    margin-right: 45px;
-  }
-  #btn-mobile {
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.1rem;
-  }
-  #hamburger::after,
-  #hamburger::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: 0.2s;
-    position: relative;
-    background-color: rgb(255, 254, 254);
-
-  }
-  #nav.active #hamburger {
-    border-top-color: transparent;
-
-  }
-  #nav.active #hamburger::before {
-    transform: rotate(130deg);
-  }
-  #nav.active #hamburger::after {
-    transform: rotate(-135deg);
-    top: -1px;
-  }
-}
-</style>
-<body>
- 
-<header id="top-header">
-      <a  href="index.html"><img src="https://raw.githubusercontent.com/GabpsX/GabpsX/a488afe575e5a193d5a22f85ef60cba16d7d1251/docs/icons8-github.gif" alt="Logo"></a>
-      <nav id="nav">
-         <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-         <span id="hamburger"></span>
-         </button>
-         <ul id="menu" role="menu">
-
-
-            <li><a href="https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/Nextion.7z">Nextion HMI</a></li>
-            <li><a href="https://gabpsx.github.io/login-site-gabpsx/">Login</a></li>
-            <li><a href="https://gabpsx.github.io/maintenance-page/">Sobre</a></li>
-         </ul>
-      </nav>
-</header>    
-<section class="disable">
-</div>
-
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-
-        <img src="https://raw.githubusercontent.com/GabpsX/projeto_u-f-s_arduino/f6b0a4d7a538af88bb7385b62c3a9c3b8e30fe08/docs/img/pHmeter.png
-" class="d-block w-100" alt="">
-        
-      
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://raw.githubusercontent.com/GabpsX/projeto_u-f-s_arduino/f6b0a4d7a538af88bb7385b62c3a9c3b8e30fe08/docs/img/pHmeter_2.png" class="d-block w-100" alt="">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="https://raw.githubusercontent.com/GabpsX/projeto_u-f-s_arduino/f6b0a4d7a538af88bb7385b62c3a9c3b8e30fe08/docs/img/pHmeter_3.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
-
-    <div class="container-fluid p-5 bg-primary text-white text-center">
-        <h1 style="font-size: 1.2em;" class="text-center">Desenvolvimento de instrumentação científica de baixo custo com a plataforma Arduino e impressão 3D</h1> 
-        <h1 style="font-size: 1.0em; border: #1f1f1f;padding:8px;">Downloads</h1>
-        <button id="button_1" type="button">Tutoriais</button>
-      </div>
-
-		</div>
-	</div>
-</div>
-
-<div class="container-top_nav" style="background-color: #f7f6f6;
-border-radius: 5px;
-width: 98%;
-margin-left: auto;
-margin-top: 0.1cm;
-margin-bottom: 0.1cm;
-margin-right: auto;">
-  <hr>
-</div>
-
-<div class="container_1">
-  <div class="content-img">
-    <h3>Triangle Wave</h3>
-    <img class="triangle-img" src="img/Corrente.png" alt="">
-    <textarea id="wave">
- 
-    </textarea>
-    <div class="text-center">
-      <button id="button_6" type="button">Copy Code</button>
-      <button id="button_4" type="button" onclick="location.href='https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/pHmetro.7z'" type="button">
-        Download</button>
-      <script type="text/javascript">
-          var button_4 = document.getElementById("button_6"),
-              input_4 = document.getElementById("wave");
-  
-          button_4.addEventListener("click", function(event) {
-              event.preventDefault();
-              input_4.select();
-              document.execCommand("copy");
-          });
-      </script>
-    </div>
-
-  </div>
-  <style>
-    .content-img{
+   <head>
+      <!--boo-->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="jquery/jquery-3.6.1.min.js"></script>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <title>GabpsX</title>
+   </head>
+   <style>
+      #back-to-top:hover{
+      opacity: 0.8;
+      background-color: rgb(5, 155, 255);
+      }
+      section{
+      -webkit-font-smoothing: antialiased;
+      }
+      #top-header{
+      height: 80px;
+      color: #000000;
+      background: linear-gradient(320deg, #333, #333, rgb(5, 155, 255));
+      }
+      a img{
+      top: 4px;
+      background-color: black;
+      width: 50px;
+      height: 16%;
+      margin-right: 5px;
+      border-radius: 0.4cm;
+      }
+      #top-header:hover a img {
+      -moz-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(1.2);
+      max-width: 100%;
+      -moz-transition: all 0.9s;
+      -webkit-transition: all 0.9s;
+      transition: all 0.9s;
+      background-color: black;
+      }
+      header ul li a:hover {
+      -moz-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(1.2);
+      max-width: 100%;
+      -moz-transition: all 0.9s;
+      -webkit-transition: all 0.9s;
+      transition: all 0.9s;
+      }
+      a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      margin-top: 10px;
+      }
+      a:hover {
+      background: rgba(0, 0, 0, 0.05);
+      }
+      #logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      }
+      #header {
+      /* box-sizing: border-box;
+      height: 60px;
+      padding: 1rem;
+      display: flex;
       margin-left: auto;
       margin-right: auto;
-    }
-    .triangle-img{
-      width: 80%;
-      margin-bottom: 4%;
-      border-radius: 8px;
-    }
-  </style>
-
-
-<hr>
-<section>
-  <section class="container_1">
-  
-    <h3>Ciclador de Baterias</h3>
-    <textarea id="Ciclador_copy">
+      justify-content: space-between;
+      */
+      background: #000000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* 
+      margin-bottom: 0.08cm;
+      width: 99%;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      align-items: center;
+      */
+      }
+      #menu {
+      display: flex;
+      list-style: none;
+      gap: 1.0rem;
+      }
+      #menu a {
+      display: block;
+      padding: 0.5rem;
+      }
+      #btn-mobile {
+      display: none;
+      }
+      @media (max-width: 600px) {
+      #header{
+      height: 75px;
+      }
+      #header a img {
+      margin-top: -20px;
+      }
+      #menu {
+      position: fixed;
+      display: inline-block;
+      vertical-align: middle;
+      width: 30vh;
+      top: 80px;
+      right: 10%;
+      background: #ececec;
+      transition: 0.8s;
+      z-index: 1000;
+      height: 50px;
+      visibility: hidden;
+      overflow-y: hidden;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+      color:rgb(27, 27, 226);
+      }
+      #nav.active #menu {
+      height: 200px;
+      background-color: #1f1f1f;
+      border-radius: 15px;
+      visibility: visible;
+      overflow-y: auto;
+      }
+      #menu a {
+      padding: 0rem -10rem;
+      margin: 0.5rem;
+      border-radius: 10px;
+      margin-right: 45px;
+      }
+      #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.1rem;
+      }
+      #hamburger::after,
+      #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.2s;
+      position: relative;
+      background-color: rgb(255, 254, 254);
+      }
+      #nav.active #hamburger {
+      border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+      transform: rotate(130deg);
+      }
+      #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -1px;
+      }
+      }
+   </style>
+   <body>
+      <header id="top-header">
+         <a  href="index.html"><img src="https://raw.githubusercontent.com/GabpsX/GabpsX/a488afe575e5a193d5a22f85ef60cba16d7d1251/docs/icons8-github.gif" alt="Logo"></a>
+         <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+               <li><a href="https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/Nextion.7z">Nextion HMI</a></li>
+               <li><a href="https://gabpsx.github.io/login-site-gabpsx/">Login</a></li>
+               <li><a href="https://gabpsx.github.io/maintenance-page/">Sobre</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section class="disable">
+         </div>
+         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="https://raw.githubusercontent.com/GabpsX/projeto_u-f-s_arduino/f6b0a4d7a538af88bb7385b62c3a9c3b8e30fe08/docs/img/pHmeter.png
+                     " class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>First slide label</h5>
+                     <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+               </div>
+               <div class="carousel-item" data-bs-interval="2000">
+                  <img src="https://raw.githubusercontent.com/GabpsX/projeto_u-f-s_arduino/f6b0a4d7a538af88bb7385b62c3a9c3b8e30fe08/docs/img/pHmeter_2.png" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Second slide label</h5>
+                     <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img src="https://raw.githubusercontent.com/GabpsX/projeto_u-f-s_arduino/f6b0a4d7a538af88bb7385b62c3a9c3b8e30fe08/docs/img/pHmeter_3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Third slide label</h5>
+                     <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+               </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+         </div>
+      </section>
+      <div class="container-fluid p-5 bg-primary text-white text-center">
+         <h1 style="font-size: 1.2em;" class="text-center">Desenvolvimento de instrumentação científica de baixo custo com a plataforma Arduino e impressão 3D</h1>
+         <h1 style="font-size: 1.0em; border: #1f1f1f;padding:8px;">Downloads</h1>
+         <button id="button_1" type="button">Tutoriais</button>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="container-top_nav" style="background-color: #f7f6f6;
+         border-radius: 5px;
+         width: 98%;
+         margin-left: auto;
+         margin-top: 0.1cm;
+         margin-bottom: 0.1cm;
+         margin-right: auto;">
+         <hr>
+      </div>
+      <div class="container_1">
+      <div class="content-img">
+         <h3>Triangle Wave</h3>
+         <img class="triangle-img" src="img/Corrente.png" alt="">
+         <textarea id="wave">
+ 
+    </textarea>
+         <div class="text-center">
+            <button id="button_6" type="button">Copy Code</button>
+            <button id="button_4" type="button" onclick="location.href='https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/pHmetro.7z'" type="button">
+            Download</button>
+            <script type="text/javascript">
+               var button_4 = document.getElementById("button_6"),
+                   input_4 = document.getElementById("wave");
+               
+               button_4.addEventListener("click", function(event) {
+                   event.preventDefault();
+                   input_4.select();
+                   document.execCommand("copy");
+               });
+            </script>
+         </div>
+      </div>
+      <style>
+         .content-img{
+         margin-left: auto;
+         margin-right: auto;
+         }
+         .triangle-img{
+         width: 80%;
+         margin-bottom: 4%;
+         border-radius: 8px;
+         }
+      </style>
+      <hr>
+      <section>
+         <section class="container_1">
+            <h3>Ciclador de Baterias</h3>
+            <textarea id="Ciclador_copy">
 
 	  
     </textarea>
-  
-  </section>
-  <br>
-  <div class="text-center">
-    <button id="button" type="button"  value="Copy">Copy Code</button>
-    <button id="button_2" type="button" onclick="location.href='https://github.com/GabpsX/Ciclador_bat/archive/refs/heads/main.zip'" type="button">
-      Download</button>
-    <script type="text/javascript">
-        var button1 = document.getElementById("button"),
-            input1 = document.getElementById("Ciclador_copy");
-
-        button1.addEventListener("click", function(event1) {
-            event1.preventDefault();
-            input1.select();
-            document.execCommand("copy");
-        });
-    </script>
-  </div>
-
-  <br>
-  <hr>
-  <section class="container_2">
-    <h3>pHmetro</h3>
-    <textarea id="ph_copy">
+         </section>
+         <br>
+         <div class="text-center">
+            <button id="button" type="button"  value="Copy">Copy Code</button>
+            <button id="button_2" type="button" onclick="location.href='https://github.com/GabpsX/Ciclador_bat/archive/refs/heads/main.zip'" type="button">
+            Download</button>
+            <script type="text/javascript">
+               var button1 = document.getElementById("button"),
+                   input1 = document.getElementById("Ciclador_copy");
+               
+               button1.addEventListener("click", function(event1) {
+                   event1.preventDefault();
+                   input1.select();
+                   document.execCommand("copy");
+               });
+            </script>
+         </div>
+         <br>
+         <hr>
+         <section class="container_2">
+            <h3>pHmetro</h3>
+            <textarea id="ph_copy">
  
     </textarea>
-  
-  </section>
-  <br>
-  <div class="text-center">
-    <button id="button_3" type="button">Copy Code</button>
-    <button id="button_4" type="button" onclick="location.href='https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/pHmetro.7z'" type="button">
-      Download</button>
-    <script type="text/javascript">
-
-        var button = document.getElementById("button_3"),
-            input = document.getElementById("ph_copy");
-
-        button.addEventListener("click", function(event) {
-            event.preventDefault();
-            input.select();
-            document.execCommand("copy");
-        });
-    </script>
-  </div>
-  <br>
-<hr>
-  <!-- Copyright -->
-  <div class="text-center p-3">
-    © 2022 Copyright:
-    <a class="text-white_1" href="">Developed by GabpsX.</a>
-    <button id ="back-to-top" type="button" class="btn btn-success">Back to top</button>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-       
-    <script>
-       var btn = document.querySelector("#back-to-top");
-       btn.addEventListener("click", function() {
-          window.scrollTo(0, 0);
-       });
-    </script>
- </section>
-</body>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/script_menu.js"></script>
-<!-- 
-<script src="js/add_code.js"></script>
--->
-<script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
+         </section>
+         <br>
+         <div class="text-center">
+            <button id="button_3" type="button">Copy Code</button>
+            <button id="button_4" type="button" onclick="location.href='https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/pHmetro.7z'" type="button">
+            Download</button>
+            <script type="text/javascript">
+               var button = document.getElementById("button_3"),
+                   input = document.getElementById("ph_copy");
+               
+               button.addEventListener("click", function(event) {
+                   event.preventDefault();
+                   input.select();
+                   document.execCommand("copy");
+               });
+            </script>
+         </div>
+         <br>
+         <hr>
+         <!-- Copyright -->
+         <div class="text-center p-3">
+            © 2022 Copyright:
+            <a class="text-white_1" href="">Developed by GabpsX.</a>
+            <button id ="back-to-top" type="button" class="btn btn-success">Back to top</button>
+         </div>
+         <!-- Copyright -->
+         </footer>
+         <!-- Footer -->
+         <script>
+            var btn = document.querySelector("#back-to-top");
+            btn.addEventListener("click", function() {
+               window.scrollTo(0, 0);
+            });
+         </script>
+      </section>
+   </body>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/scripts.js"></script>
+   <script src="js/script_menu.js"></script>
+   <!-- 
+      <script src="js/add_code.js"></script>
+      -->
+   <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
-    }
-</script>
-
-<script src="js/data.js"></script>
- 
-
-<script>
-  $('#top-header').css({'display':'flex', 'justify-content':'space-between', 'align-items': 'center', 'margin-bottom': '2%'})
-</script>
+   </script>
+   <script src="js/data.js"></script>
+   <script>
+      $('#top-header').css({'display':'flex', 'justify-content':'space-between', 'align-items': 'center', 'margin-bottom': '2%'})
+   </script>
 </html>
