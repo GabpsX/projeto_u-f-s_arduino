@@ -20,17 +20,27 @@
       section{
       -webkit-font-smoothing: antialiased;
       }
+      .header_content{
+         background: linear-gradient(320deg, #333, #333, rgb(5, 155, 255));
+      }
+      .container-fluid{
+         max-width: 1440px;
+      }
       #top-header{
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
       height: 80px;
       color: #000000;
-      background: linear-gradient(320deg, #333, #333, rgb(5, 155, 255));
+     
       }
       a img{
+ 
+      background-color: black;
       width: 50px;
       height: 16%;
-
+      margin-left: 50px;
       border-radius: 50%;
-      margin-left: 50px!important; 
       }
       #top-header:hover a img {
       -moz-transform: scale(0.9);
@@ -166,19 +176,22 @@
       }
    </style>
    <body>
-      <header id="top-header">
-         <a  href="index.html"><img src="https://raw.githubusercontent.com/GabpsX/GabpsX/a488afe575e5a193d5a22f85ef60cba16d7d1251/docs/icons8-github.gif" alt="Logo"></a>
-         <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            <span id="hamburger"></span>
-            </button>
-            <ul id="menu" role="menu">
-               <li><a href="https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/Nextion.7z">Nextion HMI</a></li>
-               <li><a href="https://gabpsx.github.io/login-site-gabpsx/">Login</a></li>
-               <li><a href="https://gabpsx.github.io/maintenance-page/">Sobre</a></li>
-            </ul>
-         </nav>
-      </header>
+      <div class="header_content">
+         <header id="top-header">
+            <a  href="index.html"><img src="https://raw.githubusercontent.com/GabpsX/GabpsX/a488afe575e5a193d5a22f85ef60cba16d7d1251/docs/icons8-github.gif" alt="Logo"></a>
+            <nav id="nav">
+               <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+               <span id="hamburger"></span>
+               </button>
+               <ul id="menu" role="menu">
+                  <li><a href="https://github.com/GabpsX/projeto_u-f-s_arduino/raw/main/docs/Nextion.7z">Nextion HMI</a></li>
+                  <li><a href="https://gabpsx.github.io/login-site-gabpsx/">Login</a></li>
+                  <li><a href="https://gabpsx.github.io/maintenance-page/">Sobre</a></li>
+               </ul>
+            </nav>
+         </header>
+      </div>
+
       <section class="disable">
          </div>
          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">

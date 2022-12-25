@@ -1,7 +1,7 @@
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body {margin:0; user-select: none;max-width: 1440px; margin-left: auto !important; margin-right: auto !important;}
+body {margin:0; user-select: none; margin-left: auto !important; margin-right: auto !important;}
 /**/
 .container-fluid img {
   border-radius: 0.5em;
@@ -20,6 +20,7 @@ body {margin:0; user-select: none;max-width: 1440px; margin-left: auto !importan
     width: 98%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1440px;
 }
 hr{
   background-color: aliceblue;
