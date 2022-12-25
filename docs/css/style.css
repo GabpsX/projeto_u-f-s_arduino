@@ -1,7 +1,7 @@
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body {margin:0; user-select: none;}
+body {margin:0; user-select: none;max-width: 1440px; margin-left: auto !important; margin-right: auto !important;}
 /**/
 .container-fluid img {
   border-radius: 0.5em;
@@ -55,12 +55,12 @@ hr{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #282a36; 
-    border-radius: 10px;
+
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(0, 60, 255);
+    background: rgb(145, 164, 226);
   }
 }
 @media(max-width:700px) {
