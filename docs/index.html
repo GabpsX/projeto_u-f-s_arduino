@@ -5,7 +5,6 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Free Web tutorials">
       <meta name="keywords" content="HTML,CSS,XML,JavaScript">
       <link rel="stylesheet" href="css/style.css">
       <script src="jquery/jquery-3.6.1.min.js"></script>
@@ -43,23 +42,17 @@
       border-radius: 50%;
       }
       #top-header:hover a img {
-      -moz-transform: scale(0.9);
-      -webkit-transform: scale(0.9);
-      transform: scale(1.2);
+
+
+
       max-width: 100%;
-      -moz-transition: all 0.9s;
-      -webkit-transition: all 0.9s;
-      transition: all 0.9s;
+
       background-color: black;
       }
       header ul li a:hover {
-      -moz-transform: scale(0.9);
-      -webkit-transform: scale(0.9);
-      transform: scale(1.2);
+
       max-width: 100%;
-      -moz-transition: all 0.9s;
-      -webkit-transition: all 0.9s;
-      transition: all 0.9s;
+
       }
       a {
       color: rgb(255, 255, 255);
@@ -105,29 +98,25 @@
       #btn-mobile {
       display: none;
       }
-      @media (max-width: 600px) {
+      @media (max-width: 700px) {
       #header{
       height: 75px;
       }
-      #header a img {
-      margin-top: -20px;
-      }
+
       #menu {
-      position: fixed;
-      display: inline-block;
-      vertical-align: middle;
-      width: 30vh;
-      top: 80px;
-      right: 10%;
-      background: #ececec;
-      transition: 0.8s;
-      z-index: 1000;
-      height: 50px;
-      visibility: hidden;
-      overflow-y: hidden;
-      text-align: center;
-      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-      color:rgb(27, 27, 226);
+         position: fixed;
+         display: inline-block;
+         vertical-align: middle;
+         width: fit-content;
+         top: 80px;
+         right: 10%;
+         z-index: 1000;
+         height: 50px;
+         visibility: hidden;
+         overflow-y: hidden;
+         text-align: center;
+         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+         color:rgb(255, 255, 255);
       }
       #nav.active #menu {
       height: 200px;
@@ -178,7 +167,7 @@
    <body>
       <div class="header_content">
          <header id="top-header">
-            <a  href="index.html"><img src="https://raw.githubusercontent.com/GabpsX/GabpsX/a488afe575e5a193d5a22f85ef60cba16d7d1251/docs/icons8-github.gif" alt="Logo"></a>
+           <img class="img_header" src="https://raw.githubusercontent.com/GabpsX/GabpsX/a488afe575e5a193d5a22f85ef60cba16d7d1251/docs/icons8-github.gif" alt="Logo">
             <nav id="nav">
                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                <span id="hamburger"></span>
@@ -336,13 +325,13 @@
          </div>
          <br>
          <hr>
-         <!-- Copyright -->
+         <!--  -->
          <div class="text-center p-3">
-            © 2022 Copyright:
+            2022 :
             <a class="text-white_1" href="">Developed by GabpsX.</a>
             <button id ="back-to-top" type="button" class="btn btn-success">Back to top</button>
          </div>
-         <!-- Copyright -->
+         <!--  -->
          </footer>
          <!-- Footer -->
          <script>
